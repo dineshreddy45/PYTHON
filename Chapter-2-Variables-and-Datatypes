@@ -1,0 +1,104 @@
+#NOTE -----> BEHIND EVERY DEFINITON THERE IS AN EXAMPLE GIVEN PLEASE REFER IT.
+
+"""
+
+Naming and Using Variables
+When you’re using variables in Python, you need to adhere to a few rules
+and guidelines. Breaking some of these rules will cause errors; other guidelines just help you write code that’s easier to read and understand. Be sure
+to keep the following variable rules in mind:
+•	 Variable names can contain only letters, numbers, and underscores.
+They can start with a letter or an underscore, but not with a number.
+For instance, you can call a variable message_1 but not 1_message.
+•	 Spaces are not allowed in variable names, but underscores can be used
+to separate words in variable names. For example, greeting_message
+works, but greeting message will cause errors.
+•	 Avoid using Python keywords and function names as variable names;
+that is, do not use words that Python has reserved for a particular programmatic purpose, such as the word print.
+•	 Variable names should be short but descriptive. For example, name is
+better than n, student_name is better than s_n, and name_length is better
+than length_of_persons_name.
+•	 Be careful when using the lowercase letter l and the uppercase letter O
+because they could be confused with the numbers 1 and 0. """
+
+message="Hello I am learning python"
+print(message)
+
+
+#Strings --> A string is a series of characters. Anything inside quotes is considered a string in Python and you can use single or double quotes.
+
+my_string="This is to test string syntax"
+print(my_string)
+print(type(my_string))
+
+my_string_2='This is other way of syntax for a string'
+print(my_string_2)
+
+#Changing Case in a String with Methods
+
+name = "ada lovelace"
+print(name.title())  #The title() method changes each word to title case, where each word begins with a capital letter.
+
+print(name.upper()) #convert strings to uppercase before storing them, we are printing it.
+
+print(name.lower()) #convert strings to lowercase before storing them, we are printing it.and
+
+#Using Variables in Strings
+
+#if you want to add two strings we can do with f string.
+
+#f-strings (formatted string literals) are a specific way to format strings that allow you to embed expressions directly inside string literals using curly braces {}. They can include variable values, calculations, and other expressions.
+
+first_name="Dinesh"
+second_name="Kumar Reddy"
+full_name=f"{first_name} {second_name}"
+print(full_name)
+
+#Concatenation refers specifically to the operation of joining two or more strings together to form a single string. This can be done using the + operator or the join() method.
+
+print( first_name +" " + second_name )
+
+
+#INTEGERS
+a=3
+b=2
+addition=print(a+b)
+subraction=print(a-b)
+multiplication=print(a*b)
+divison=print(a/b)
+square=print(a**2)
+power=print(pow(a,5))  #this means 3 power 5 which is 3*3*3*3*3=243
+
+#we need to import math function to find square root.
+import math
+sqaure_root=print(math.sqrt(a))
+
+
+#FLOATS
+
+#In Python, floating-point numbers (or floats) are used to represent real numbers with decimal points. Here are some examples and key points about working with floats
+
+# Float arithmetic
+x = 5.0
+y = 2.0
+
+# Addition
+sum_result = x + y
+print("Sum:", sum_result)  # Output: 7.0
+
+# Subtraction
+diff_result = x - y
+print("Difference:", diff_result)  # Output: 3.0
+
+# Multiplication
+prod_result = x * y
+print("Product:", prod_result)  # Output: 10.0
+
+# Division
+div_result = x / y
+print("Quotient:", div_result)  # Output: 2.5
+
+#Multiple Assignment
+d,e,f=10,21.75,"docker"
+
+print(f"{d}\n{e}\n{f}")  #\n is for new line, \t is for tab space in python.
+
