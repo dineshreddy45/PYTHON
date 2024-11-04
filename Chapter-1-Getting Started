@@ -1,0 +1,7 @@
+#in this chapter we have installed python on our windows laptop with latest version
+
+#PS C:\Users\I558108\OneDrive - SAP SE\Study\PYTHON> python --version
+#Python 3.11.4
+
+print( "Hello world" )
+print ("Hello interpreter")
