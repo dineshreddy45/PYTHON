@@ -1,0 +1,63 @@
+# A list is a collection of items in a particular order. 
+# You can make a list that includes the letters of the alphabet,
+# the digits from 0–9, or the names of all the people in your family.
+# You can put anything you want into a list.
+
+Example_list=[100,25,333,"dinesh",3.1467]
+print(Example_list)
+
+# Accessing Elements in a List --> NOTE :- Index Positions Start at 0, Not 1
+
+print(Example_list[0])
+print(Example_list[2])
+
+print(Example_list[-1]) #-1 starts from last element --> reverse order.
+print(Example_list[-2])
+
+#Changing, Adding, and Removing Elements
+
+motorcycles=['honda', 'yamaha', 'suzuki']
+motorcycles[0]='ducati'
+print(motorcycles) #you can see that honda is replaced by ducati. --> changing a element.
+
+motorcycles.append('bmw') #this will add element at the end of the list.
+print(motorcycles) 
+
+
+ #if you want to add at any specific position we can use insert function
+ 
+motorcycles.insert( 2, 'shine')
+print(motorcycles) #note --> the position at 3rd will be moved to 4th. [ insert doesn't not remove anything]
+
+#Removing Elements from a List
+del(motorcycles[0])
+print(motorcycles)
+
+
+#we can also use pop function to remove a element from the list but the difference between del and pop is 
+"""Remember that each time you use pop(), the item you work with is no
+longer stored in the list.
+If you’re unsure whether to use the del statement or the pop() method,
+here’s a simple way to decide: when you want to delete an item from a list
+and not use that item in any way, use the del statement; if you want to use an
+item as you remove it, use the pop() method."""
+
+popped_item=motorcycles.pop(2)
+print(motorcycles)
+print(popped_item)
+
+
+#sorting the list.
+
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort()
+print(cars)
+
+
+#to print the list in reverse order
+
+cars.reverse()
+print(cars)
+
+#Finding the Length of a List
+print(len(cars))
