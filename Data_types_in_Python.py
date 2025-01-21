@@ -1,13 +1,7 @@
-#SWAPPING 2 number
+#Primitive data types in python
 
-a = int(input("Enter the first number:- "))
-
-b = int(input("Enter the second number:- "))
-
-print ("Before swapping", a,b)
-
-c = b
-b = a
-a = c
-
-print ("after swapping values are ", a,b)
+var_1 = 3
+var_2 = 3.49544
+var_3 = "dinesh"
+var_4 = True
+print (type(var_1),type(var_2), type(var_3), type(var_4))
